@@ -56,7 +56,7 @@ async def sleep(ctx, arg):
 		sleeprem[ctx.author] = [target, ctx]
 		await ctx.send(f"{ctx.author.mention} Ok. I will put you to sleep at {arg}.")
 	except ValueError:
-		await ctx.send("Please enter a valid time, type !z help for commands")
+		await ctx.send("Please enter a valid time, type '!z help' for commands")
 
 @client.command()
 async def cancel(ctx):
